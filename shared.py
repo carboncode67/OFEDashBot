@@ -299,7 +299,7 @@ def find_farmer(phone: str) -> dict | None:
     Look up a farmer by phone number in the registry.
     Normalizes phone numbers by stripping +, spaces, and leading country
     code (1 for US/Canada) before comparing. This handles mismatches where
-    the farmer is stored as "6072299837" but Twilio sends "16072299837".
+    the farmer is stored as "5555550123" but Twilio sends "+15555550123".
     Returns the farmer dict if found, None if not registered.
     Unknown numbers are silently rejected by the webhook.
     """

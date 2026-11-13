@@ -1,0 +1,19 @@
+# Never bake secrets or repo metadata into the (public) image.
+.env
+*.env
+.env.*
+!.env.example
+.git
+.github
+.gitignore
+.venv
+__pycache__
+*.pyc
+.DS_Store
+.idea
+.claude
+CLAUDE.md
+# Received farmer data (PII) and generated reports
+received
+reporting
+weekly_report_*.html
