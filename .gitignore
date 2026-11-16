@@ -15,3 +15,35 @@ __pycache__/
 received/
 reporting/
 weekly_report_*.html
+
+# ── Liberal ignores (when in doubt, keep it out of git) ─────────────────────
+# Data, exports, credentials and scratch never belong in the repo. To commit a
+# file that matches on purpose, use `git add -f`.
+.DS_Store
+*.sync-conflict-*
+.env
+.env.*
+!*.example
+secrets.yaml
+secrets.json
+*.pem
+*.key
+*.p12
+*.log
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.zip
+*.tar.gz
+*.tif
+*.tiff
+*.gpkg
+*.mbtiles
+*.sqlite
+*.db
+*.bak
+scratch/
+tmp/
+# Local notes
+CLAUDE.md
